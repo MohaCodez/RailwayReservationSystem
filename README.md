@@ -25,8 +25,8 @@ Before you begin, ensure you have the following tools installed:
 
 ### Installation
 
-1. Clone the repo
-git clone [URL to the Repository](https://github.com/MohaCodez/RailwayReservationSystem.git)
+1. Clone the repo ([URL to the Repository](https://github.com/MohaCodez/RailwayReservationSystem.git)):
+`git clone https://github.com/MohaCodez/RailwayReservationSystem.git`
 
 2. To access and run the .java files, head over to the `java-files` folder and run the `main class`:
 ```cd java-files```
