@@ -20,20 +20,27 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 Before you begin, ensure you have the following tools installed:
-- Java v15.0.2
-- node v20.11.1
-- Your preferred IDE (e.g., Eclipse, VS Code, etc.)
+- `Java v15.0.2`
+- `node v20.11.1`
+- `Your preferred IDE` (e.g., Eclipse, VS Code, etc.)
 
 ### Installation
 
 1. Clone the repo
-git clone [<URL_to_Repository>](https://github.com/MohaCodez/RailwayReservationSystem.git)
+git clone [URL to the Repository](https://github.com/MohaCodez/RailwayReservationSystem.git)
 
-2. For the backend, navigate to the `backend` folder and compile the Java files:
-cd backend
-javac *.java
+2. To access and run the .java files, head over to the `java-files` folder and run the `main class`:
+```cd java-files```
+```javac main.java```
+```java main```
 
-3. For the frontend, navigate to the `frontend` folder. Instructions for setting up the frontend are located in the frontend's README.
+3. For the backend, navigate to the `backend` folder and run the node files:
+```cd backend```
+```node main.js```
+
+4. For the frontend, navigate to the `frontend` folder and run `index.html`:
+```cd frontend```
+```index.html```
 
 ## Usage
 
@@ -57,4 +64,4 @@ Feel free to reach out to any team members for questions or discussions!
 
 ## Acknowledgments
 
-- Thank you Prof. Anita Agrawal for crafting this problem and giving us a chance to learn by working on this project.
+Thank you Prof. Anita Agrawal for crafting this problem and giving us a chance to learn by working on this project.
