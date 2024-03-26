@@ -1,11 +1,11 @@
-public class User {
+abstract class User {
     private String username;
     private String password;
     private String email;
     public boolean isUserLoggedIn;
 
     // constructor
-    User(String username, String password, String email) {
+    User(String username, String password, String email, boolean isUserLoggedIn){
         this.username = username;
         this.password = password;
         this.email = email;
