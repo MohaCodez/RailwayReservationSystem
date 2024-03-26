@@ -1,4 +1,4 @@
-Deven
-Jain
-email
-pass
+amit2
+mohapatty
+mail
+male

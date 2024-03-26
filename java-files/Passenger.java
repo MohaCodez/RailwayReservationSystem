@@ -7,7 +7,7 @@ public class Passenger extends User {
 
     Passenger(String firstName, String lastName, String email, String password, boolean isUserLoggedIn, int age,
             boolean isDisabled, boolean isMilitary) {
-        super(firstName, lastName, email, password, isUserLoggedIn);
+        super(firstName, lastName, email, password);
         this.age = age;
         this.isDisabled = isDisabled;
         this.isMilitary = isMilitary;

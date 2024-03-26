@@ -3,15 +3,14 @@ public class User {
     private String lastName;
     private String email;
     private String password;
-    private static boolean isUserLoggedIn;
+    private static boolean isUserLoggedIn = false;
 
     // constructor
-    User(String firstName, String lastName, String email, String password, boolean isUserLoggedIn) {
+    User(String firstName, String lastName, String email, String password) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.password = password;
         this.email = email;
-        isUserLoggedIn = false;
     }
 
     // getters and setters for the user's attributes
@@ -19,7 +18,7 @@ public class User {
         return this.email;
     }
 
-    public boolean getUserLoginStatus() {
+    public static boolean getUserLoginStatus() {
         return isUserLoggedIn;
     }
 
@@ -27,8 +26,8 @@ public class User {
         this.password = password;
     }
 
-    public static void setUserLoggedIn() {
-        isUserLoggedIn = true;
+    public static void setUserLoggedIn(boolean value) {
+        isUserLoggedIn = value;
     }
 
     public static boolean login(String enteredUsername, String enteredPassword) {
@@ -39,7 +38,8 @@ public class User {
         if (userData != null && userData.length != 0) {
             if (userData[2].equals(enteredUsername)) {
                 if (userData[3].equals(enteredPassword)) {
-                    User onlineUser = new User(userData[0], userData[1], userData[2], userData[3], true);
+                    User onlineUser = new User(userData[0], userData[1], userData[2], userData[3]);
+                    setUserLoggedIn(true);
                     System.out.println("Login successful!");
                 } else {
                     System.out.println("Invalid Password!");
@@ -61,14 +61,17 @@ public class User {
 
         if (password.equals(confirm_password)) {
             FileHandling.WritingDataInFile("user-data/confidential.txt", firstName, lastName, email, password);
-            User onlineUser = new User(firstName, lastName, email, password, true);
+            User onlineUser = new User(firstName, lastName, email, password);
             System.out.println("Your account has been successfully created!");
+            setUserLoggedIn(true);
         } else {
             System.err.println("Passwords do not match!");
         }
 
     }
 
-    public void logout() {
+    public static void logout() {
+        setUserLoggedIn(false);
+        System.out.println("Logged out successfully!");
     }
 }

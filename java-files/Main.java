@@ -16,8 +16,6 @@ public class Main {
             System.out.println("Enter your password: ");
             String enteredPassword = scanner.next(); // Read user input
 
-            scanner.close(); // Close the scanner
-
             User.login(enteredUsername, enteredPassword); // call the login method
 
         } else if (input.equals("2")) {
@@ -36,12 +34,33 @@ public class Main {
             System.out.println("Confirm your password: ");
             String enteredConfirmPassword = scanner.next(); // Read user input
 
-            scanner.close(); // Close the scanner
-
             User.signUp(enteredFName, enteredLName, enteredEmail, enteredPassword, enteredConfirmPassword, false);
 
         } else {
             System.out.println("Invalid Input!");
+        }
+
+        if (User.getUserLoginStatus()) {
+            System.out.println("\nWelcome to the main menu of the application!");
+
+            while (User.getUserLoginStatus()) {
+                System.out.println("Press:\n[1] - Book Ticket\n[2] - Cancel Ticket\n[3] - Logout");
+                int menuInput = Integer.parseInt(scanner.next());
+
+                switch (menuInput) {
+                    case 1:
+                        // insert code here
+                        break;
+
+                    case 2:
+                        // insert code here
+                        break;
+
+                    case 3:
+                        User.logout();
+                        break;
+                }
+            }
         }
 
         scanner.close();
