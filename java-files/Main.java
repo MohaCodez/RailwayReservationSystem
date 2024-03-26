@@ -40,7 +40,7 @@ public class Main {
             System.out.println("Invalid Input!");
         }
 
-        if (User.getUserLoginStatus() == true) {
+        if (User.getUserLoginStatus()) {
             System.out.println("\nWelcome to the main menu of the application!");
 
             while (User.getUserLoginStatus()) {
