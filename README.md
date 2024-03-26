@@ -16,6 +16,7 @@ Welcome to the Railway Reservation System project! This application is designed 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+You may click the following link to view our [Progress Sheet](https://docs.google.com/spreadsheets/d/1Z7jFryslJz_vN9HPYvExjK6KguzUKElF3G71ouHhjc4/edit?usp=sharing).
 
 ### Prerequisites
 
