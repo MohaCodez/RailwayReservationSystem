@@ -1,11 +1,13 @@
 abstract class User {
+    private String firstName;
+    private String lastName;
     private String username;
     private String password;
     private String email;
-    public boolean isUserLoggedIn;
+    private boolean isUserLoggedIn;
 
     // constructor
-    User(String username, String password, String email, boolean isUserLoggedIn){
+    User(String username, String password, String email, boolean isUserLoggedIn) {
         this.username = username;
         this.password = password;
         this.email = email;
@@ -19,6 +21,10 @@ abstract class User {
 
     public String getEmail() {
         return this.email;
+    }
+
+    public boolean getUserLoginStatus() {
+        return this.isUserLoggedIn;
     }
 
     // other methods
