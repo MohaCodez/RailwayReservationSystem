@@ -11,7 +11,11 @@ public class Passenger extends User {
     }
 
     Ticket bookTicket(Train train, CoachType coachtype) {
-
+        Ticket foo = new Ticket();
+        return foo;
     }
 
+    boolean cancelTicket(Ticket ticket) {
+        return true;
+    }
 }
