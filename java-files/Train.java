@@ -4,7 +4,7 @@ import java.util.HashMap;
 public class Train {
     private String trainNumber;
     private TrainRoute route;
-    private Map<CoachType, Integer> seatsAvailable
+    private Map<CoachType, Integer> seatsAvailable;
     private Map<CoachType, Double> fare;
     
     public Train(String trainNumber, TrainRoute route) {
