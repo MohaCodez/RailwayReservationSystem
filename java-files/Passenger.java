@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Passenger extends User {
     private int age;
     private boolean isDisabled;
@@ -9,15 +11,6 @@ public class Passenger extends User {
         this.age = age;
         this.isDisabled = isDisabled;
         this.isMilitary = isMilitary;
-    }
-
-    public boolean login(String username, String password) {
-        // file handling logic
-
-        return true;
-    }
-
-    public void logout() {
     }
 
     Ticket bookTicket(Train train, CoachType coachtype) {

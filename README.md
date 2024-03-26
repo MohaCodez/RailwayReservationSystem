@@ -32,8 +32,8 @@ Before you begin, ensure you have the following tools installed:
 
 2. To access and run the .java files, head over to the `java-files` folder and run the main class:<br>
 ```cd java-files```<br>
-```javac main.java```<br>
-```java main```
+```javac Main.java```<br>
+```java Main```
 
 3. For the backend, navigate to the `backend` folder and run the node files:<br>
 ```cd backend```<br>
