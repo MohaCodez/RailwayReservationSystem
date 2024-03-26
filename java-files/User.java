@@ -1,24 +1,20 @@
-abstract class User {
+public abstract class User {
     private String firstName;
     private String lastName;
-    private String username;
-    private String password;
     private String email;
+    private String password;
     private boolean isUserLoggedIn;
 
     // constructor
-    User(String username, String password, String email, boolean isUserLoggedIn) {
-        this.username = username;
+    User(String firstName, String lastName, String email, String password, boolean isUserLoggedIn) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.password = password;
         this.email = email;
         this.isUserLoggedIn = false;
     }
 
     // getters and setters for the user's attributes
-    public String getUsername() {
-        return this.username;
-    }
-
     public String getEmail() {
         return this.email;
     }
@@ -27,14 +23,12 @@ abstract class User {
         return this.isUserLoggedIn;
     }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     // other methods
-    public boolean login() {
-        this.isUserLoggedIn = true;
-        return true;
-    }
+    abstract boolean login(String username, String password);
 
-    public void logout() {
-        this.isUserLoggedIn = false;
-    }
-
+    abstract void logout();
 }
