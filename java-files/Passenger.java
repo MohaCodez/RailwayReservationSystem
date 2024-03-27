@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Passenger extends User {
     private int age;
     private boolean isDisabled;
