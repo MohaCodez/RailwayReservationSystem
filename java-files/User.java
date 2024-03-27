@@ -60,7 +60,10 @@ public class User {
             boolean isUserLoggedIn) {
 
         if (password.equals(confirm_password)) {
-            FileHandling.WritingDataInFile("user-data/confidential.txt", firstName, lastName, email, password);
+            // FileHandling.WritingDataInFile("user-data/confidential.txt", firstName,
+            // lastName, email, password);
+            String[] dataToWrite = { firstName, lastName, email, password };
+            FileHandling.JsonFileAppender("user-data/confidential.json", dataToWrite);
             User onlineUser = new User(firstName, lastName, email, password);
             System.out.println("Your account has been successfully created!");
             setUserLoggedIn(true);
