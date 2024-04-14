@@ -12,7 +12,7 @@ import java.nio.file.StandardOpenOption;
 
 public class FileHandling {
     public static String[] FileReader(String path) {
-        String filePath = path; // Replace with your file's path
+        String filePath = path;
         String[] recdInfo = new String[4];
 
         // Check if the file exists

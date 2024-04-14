@@ -44,7 +44,7 @@ public class Main {
             System.out.println("\nWelcome to the main menu of the application!");
 
             while (User.getUserLoginStatus()) {
-                System.out.println("Press:\n[1] - Book Ticket\n[2] - Cancel Ticket\n[3] - Logout");
+                System.out.println("Press:\n[1] - Book Ticket\n[2] - Cancel Ticket\n[3] - Check Status");
                 int menuInput = Integer.parseInt(scanner.next());
 
                 switch (menuInput) {
